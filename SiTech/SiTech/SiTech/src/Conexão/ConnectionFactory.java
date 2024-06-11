@@ -9,7 +9,7 @@ import java.sql.SQLException;
         
 public class ConnectionFactory {
     private String usuario = "root";
-    private String senha = "Root";
+    private String senha = "root";
     private String host = "localhost";
     private String porta = "3306";
     private String bd = "Sitech";
@@ -30,7 +30,6 @@ public class ConnectionFactory {
             e.printStackTrace();
             System.out.println("Erro na conexão com o banco de dados!");
             return null;
-            
         }
 
     }
