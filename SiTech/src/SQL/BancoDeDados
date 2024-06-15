@@ -1,0 +1,49 @@
+Drop DataBase if Exists SiTech;
+
+Create DataBase if not Exists SiTech;
+
+Use SiTech;
+
+Drop Table if Exists doador;
+
+Create Table if not Exists
+Doador (
+nome Varchar(100)not null,
+CPF Varchar(14)  Primary key, 
+sexo Varchar(10) not null, 
+tiposanguíneo Varchar(4) not null, 
+celular Varchar(20)not null, 
+email Varchar(300) not null
+);
+
+ #INSERT INTO doador(nome, CPF, sexo, tiposanguíneo, celular, email) 
+#               VALUE ("A", 2, "A", "A", 3, "A");
+
+
+#Drop Table if Exists Médico;
+
+#Create Table if not Exists Médico(
+#nome Varchar(100) not null,
+#CPF Varchar(14) not null,
+#CRM Varchar(12) Primary key,
+#sexo Varchar(10) not null,
+#celular Varchar(20)not null,
+#email Varchar(300) not null
+#);
+
+
+#segundo Crud
+Create Table if not Exists  Clinica(
+Nome_do_Medico  Varchar(100) not null,
+CRM Varchar(12) Primary key,
+Senha varchar(20) not null
+);
+
+Create Table if not Exists Receptor(
+nome Varchar(100)not null,
+CPF Varchar(14)  Primary key, 
+sexo Varchar(10) not null,
+tiposanguíneo Varchar(4) not null, 
+celular Varchar(20)not null,
+Motivo Varchar(300)
+)
